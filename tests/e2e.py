@@ -1,17 +1,14 @@
 from selenium import webdriver
-import os
+from selenium.webdriver.chrome.service import Service
 
 
-#from selenium.webdriver.chrome.service import Service
-
-os.environ["PATH"] += os.pathsep + 'tests\\chromedriver.exe\\'
-driver = webdriver.Chrome("tests\chromedriver.exe\\")
-#Service("chromedriver.exe")
-#driver = webdriver.Chrome()
+#driver = webdriver.Chrome("tests\\chromedriver.exe\\")
+Service("chromedriver.exe")
+driver = webdriver.Chrome()
 
 
 def test_scores_service():
-    driver.get("http://3.125.145.138:8777/")
+    driver.get("http://3.125.145.138:8777")
     score_element = int(driver.find_element_by_id("score").text)
     if 1000 >= score_element >= 1:
         return True
