@@ -4,8 +4,8 @@ import os
 
 #from selenium.webdriver.chrome.service import Service
 
-os.environ["PATH"] += os.pathsep + 'tests\\chromedriver.exe'
-driver = webdriver.Chrome("tests\\chromedriver.exe")
+os.environ["PATH"] += os.pathsep + 'tests\\chromedriver.exe\\'
+driver = webdriver.Chrome("tests\chromedriver.exe\\")
 #Service("chromedriver.exe")
 #driver = webdriver.Chrome()
 
