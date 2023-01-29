@@ -1,4 +1,4 @@
-FROM python3.8:alpine
+FROM python:alpine
 WORKDIR /app
 COPY *.txt /app/
 COPY ./*.py /app/
