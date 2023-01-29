@@ -1,7 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome('chromedriver')
+driver = webdriver.Chrome('tests\\chromedriver')
 
 
 
