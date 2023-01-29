@@ -1,7 +1,9 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 
-driver = webdriver.Chrome('tests\\chromedriver')
+
+s=Service('chromedriver.exe')
+browser = webdriver.Chrome(service=s)
 
 
 
