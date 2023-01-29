@@ -1,5 +1,5 @@
 from selenium import webdriver
-driver = webdriver.Chrome('tests\\chromedriver')
+driver = webdriver.Chrome('chromedriver')
 
 
 
