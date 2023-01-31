@@ -1,5 +1,5 @@
 from selenium import webdriver
-driver = webdriver.Chrome(executable_path=r'tests\chromedriver')
+driver = webdriver.Chrome(executable_path=r'tests/chromedriver')
 driver.get('http://127.0.0.1:5000')
 
 def test_scores_service():
