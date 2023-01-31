@@ -1,9 +1,9 @@
 from selenium import webdriver
-driver = webdriver.Chrome('./app/tests/chromedriver.exe')
+driver = webdriver.Chrome('chromedriver')
 
 
 def test_scores_service():
-    driver.get("http://127.0.0.1:5000/")
+    driver.get("http://3.125.145.138:8777/")
     score_element = int(driver.find_element_by_id("score").text)
     if 1000 >= score_element >= 1:
         return True
