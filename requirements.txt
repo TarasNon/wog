@@ -1,4 +1,4 @@
-Flask~=2.2.2
+Flask
 CurrencyConverter
-selenium~=4.6.0
-DateTime~=4.7
+selenium
+DateTime
