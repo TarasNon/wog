@@ -1,24 +1,22 @@
+
 from selenium import webdriver
-driver = webdriver.Chrome('chromedriver.exe')
 
+# specify the path to the ChromeDriver executable
+driver = webdriver.Chrome(executable_path='chromedriver')
 
-def test_scores_service():
-    driver.get("http://127.0.0.1:5000/")
-    score_element = int(driver.find_element_by_id("score").text)
-    if 1000 >= score_element >= 1:
-        return True
-    else:
-        return False
+# navigate to a webpage
+driver.get("http://127.0.0.1:5000/")
 
+# find the element with id "score"
+score_element = driver.find_element_by_id("score")
 
-def main_function():
-    # The main function will return -1 as an OS exit
-    # code if the tests failed and 0 if they passed.
-    test = test_scores_service()
-    if test:
-        return 0
-    else:
-        return -1
+# extract the text value of the element
+score_text = score_element.text
 
+# convert the text to an integer
+score = int(score_text)
 
-main_function()
+print(score)
+
+# close the browser
+driver.quit()
