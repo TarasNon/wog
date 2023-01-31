@@ -1,6 +1,6 @@
 from selenium import webdriver
 #driver = webdriver.Chrome(executable_path=r'tests/chromedriver.exe')
-driver = webdriver.Chrome('app/tests/chromedriver')
+driver = webdriver.Chrome('tests/chromedriver.exe')
 driver.get('http://3.125.145.138:8777')
 
 def test_scores_service():
@@ -9,6 +9,11 @@ def test_scores_service():
         return True
     else:
         return False
+
+    
+    
+test_scores_service()
+
 
 
 # def main_function():
