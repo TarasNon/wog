@@ -16,7 +16,7 @@ pipeline {
                 sh 'docker run --name score -d -p 8777:5000 tardocker/wog_play'
             }
         }
-        stage('TEst'){
+        stage('Test'){
             steps {
                 sh 'pip3 install -r requirements.txt'
                 sh 'pip3 install webdriver-manager'
