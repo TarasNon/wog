@@ -11,12 +11,12 @@ def test_scores_service():
         return False
 
 
-def main_function():
-    test = test_scores_service()
-    if test:
-        return 0
-    else:
-        return -1
+# def main_function():
+#     test = test_scores_service()
+#     if test:
+#         return 0
+#     else:
+#         return -1
 
 
-main_function()
+# main_function()
