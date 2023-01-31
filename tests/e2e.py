@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 
 s = Service('tests/chromedriver')
 driver = webdriver.Chrome(service=s)
-driver.get('http://3.125.145.138:8777')
+driver.get('http://127.0.0.1:5000')
 
 
 
