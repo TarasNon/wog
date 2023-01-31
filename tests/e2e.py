@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-s = Service('chromedriver')
+s = Service('tests/chromedriver')
 driver = webdriver.Chrome(service=s)
 driver.get('http://3.125.145.138:8777')
 
